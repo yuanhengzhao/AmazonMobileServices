@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,6 +67,17 @@ public class MainActivity extends AppCompatActivity {
         public void onSuccess(CognitoUserSession userSession) {
             Timber.d("Successful user authentication -> %s", userSession.getAccessToken());
             textView.setText("success -> " + userSession.getAccessToken().getJWTToken());
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+            Log.d("+++++++++++++++++++++", userSession.getAccessToken().getJWTToken() );
+
+
+
         }
 
         @Override
